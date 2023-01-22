@@ -25,6 +25,6 @@ A pesar de la cantidad de humo y el mal olor que hace, sigues con tu paseo, que 
 
 ![Distribución de coches en circulación según la primera letra de la matrícula](/assets/img/distribucion_coches.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
-Entonces, tu creencia sobre la probabilidad de encontrarte con esa matrícula se vuelve a alterar, en particular, 1 de cada $\displaystyle\frac{p_E}{\sum_{l\in\{A,\ldots,M}p_l}\cdot27^2$ coches (donde $p_x$ es la proporción de coches en circulación que tienen $x$ como la primera letra de la matrícula).
+Entonces, tu creencia sobre la probabilidad de encontrarte con esa matrícula se vuelve a alterar, en particular, 1 de cada $\frac{p_E}{\sum_{l\in\{A,\ldots,M}p_l}\cdot27^2$ coches (donde $p_x$ es la proporción de coches en circulación que tienen $x$ como la primera letra de la matrícula).
 
 <!-- Cuando me enfrento a un nuevo problema, me gusta recordar las palabras de George Box, quien citó que "todos los modelos son erróneos, pero algunos son útiles".  -->
