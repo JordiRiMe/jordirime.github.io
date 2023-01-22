@@ -26,7 +26,7 @@ Una vez que tengo en cuenta esto, leo un texto (cuanto más largo mejor) de cada
 
 Ahora bien, dado un texto, cómo detecto con esto qué idioma es más verosímil que represente el texto? 
 
-Con esta matriz (o vector de probabilidades) hemos construido una distribución de probabilidades para cada idioma, es decir $$p(xy|Idioma)$$. El sistema es muy sencillo, considera que los bigramas son independientes entre sí (cosa que no es verdad), pero no funciona nada mal. Es más, funciona mejor cuanto más largo sea un texto.
+Con esta matriz (o vector de probabilidades) hemos construido una distribución de probabilidades para cada idioma, es decir $$p(xy\|Idioma)$$. El sistema es muy sencillo, considera que los bigramas son independientes entre sí (cosa que no es verdad), pero no funciona nada mal. Es más, funciona mejor cuanto más largo sea un texto.
 
 Al tener un texto, obtenemos todos los bigramas de este $$\{x_1y_1,\ldots,x_ny_n\}$$ y calculamos la verosimilitud de los bigramas en cada idioma para luego simplemente ver cuál es mayor,
 
