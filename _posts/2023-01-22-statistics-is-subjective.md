@@ -34,4 +34,4 @@ Otras veces, cuando se tiene que solucionar un problema serio, lo primero que se
 
 Entonces no hay subjetividad ni nada que discutir, simplemente la matrícula DSE no existe.
 
-Es muy sano intentar resolver estos problemas, muchas veces se entienden mejor, a pesar de, muy probablemente, no llegar a una conclusión exacta ni siquiera precisa, pero como bien dijo en su día George Box, "todos los modelos son erróneos, pero algunos son útiles".
+Es muy sano tratar de resolver estos problemas, te ayudan a entender mejor muchas situaciones a pesar de que, muy probablemente, no se llegue a una conclusión exacta o ni siquiera precisa. Pero, como bien dijo en su día George Box, "todos los modelos son erróneos, pero algunos son útiles".
