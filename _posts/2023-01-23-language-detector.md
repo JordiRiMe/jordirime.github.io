@@ -36,7 +36,7 @@ He aquí el motivo por el que antes hemos sumado 1 y ajustado el divisor en la e
 
 Es en este punto cuando intentas buscar cosas que se te puedan escapar, le das un par de vueltas y piensas, ¿qué pasaría si mi texto es una URL o un conjunto de carácteres aleatorios?. La respuesta es sencilla, detectaremos un idioma de los que estamos intentando buscar. 
 
-Enconces, ¿cómo detecto por ejemplo un texto random como puede ser la letra de una canción de Bad Bunny? Pues construyendo justamente eso, una distribución de probabilidad aleatoria $$p(xy|Random)=\displaystyle\frac{1}{n_L^2}$$.
+Enconces, ¿cómo detecto por ejemplo un texto random como puede ser la letra de una canción de Bad Bunny? Pues construyendo justamente eso, una distribución de probabilidad aleatoria $$p(xy\vert Random)=\displaystyle\frac{1}{n_L^2}$$.
 
 Con esto, lo tendríamos todo listo. Solo faltaría aplicar la regla del gran Bayes para calcular la probabilidad de que el texto sea de cierto idioma:
 
