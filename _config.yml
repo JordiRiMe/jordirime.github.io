@@ -22,7 +22,7 @@ author: Jordi Ripoll
 navbar-links:
   About Me: "Científico de Datos en Wenalyze"
   Resources:
-#     - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Github: "https://github.com/JordiRiMe"
 #     - Learn markdown: "https://www.markdowntutorial.com/"
 #   Author's home: "https://deanattali.com"
 
@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/jordirm.jpg"
+avatar: "/assets/img/jordi-profile.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -95,7 +95,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+# url-pretty: "MyWebsite.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -118,7 +118,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "data science, machine learning, nlp"
 
 ######################################
 # --- Colours / background image --- #
@@ -238,7 +238,7 @@ footer-hover-col: "#0085A1"
 ################
 
 # Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
+date_format: "%Y-%m-%d"
 
 # Facebook App ID
 #fb_app_id: ""
@@ -248,7 +248,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Spain/Madrid"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
