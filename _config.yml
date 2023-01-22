@@ -249,8 +249,8 @@ date_format: "%Y-%m-%d"
 
 # Output options (more information on Jekyll's site)
 timezone: "Spain/Madrid"
-# markdown: kramdown
-markdown: maruku
+markdown: kramdown
+# markdown: maruku
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
