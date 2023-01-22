@@ -32,7 +32,7 @@ Dado un texto, obtenemos todos los bigramas de este $$\{x_1y_1,\ldots,x_ny_n\}$$
 
 $$p(x_1y_1,\ldots,x_ny_n|Idioma) = p(x_1y_1|Idioma)\cdots p(x_ny_n|Idioma).$$
 
-He aquí el motivo por el que antes hemos sumado 1 y ajustado el divisor en la estimación de las probabilidades. Tomando como ejemplo la lengua española, puede que no observemos el bigrama 'th', pero podríamos dar con un texto en castellano con este error ortográfico; en ese caso, la estimación inicaría que es más verosímil que el texto esté escrito en inglés, ya que el producto anterior se volvería 0.
+He aquí el motivo por el que antes hemos sumado 1 y ajustado el divisor en la estimación de las probabilidades. Tomando como ejemplo la lengua española, puede que no observemos el bigrama 'th', pero podríamos dar con un texto en castellano con este error ortográfico; en ese caso, la estimación indicaría que es más verosímil que el texto esté escrito en inglés, ya que el producto anterior se volvería 0.
 
 Es en este punto cuando intentas buscar cosas que se te puedan escapar, le das un par de vueltas y piensas, ¿qué pasaría si mi texto es una URL o un conjunto de carácteres aleatorios?. La respuesta es sencilla, detectaremos un idioma de los que estamos intentando buscar. 
 
