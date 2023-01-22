@@ -26,7 +26,7 @@ Una vez que tengo en cuenta esto, leo un texto (cuanto más largo mejor) de cada
 
 Ahora bien, dado un texto, y teniendo en cuenta todo lo anterior, ¿cómo detecto con esto qué idioma es más verosímil que represente dicho texto? 
 
-Hemos creado una distribución de probabilidad estimada para cada idioma, es decir $$p(xy | Idioma)$$. A partir de esto, podemos asumir que los bigramas son independientes entre sí, cosa que sabemos que no es cierta, pero simplifica mucho el problema y no funciona nada mal. Es más, funciona mejor cuanto más largo sea un texto.
+Hemos creado una distribución de probabilidad estimada para cada idioma, es decir $$p(xy\vert Idioma)$$. A partir de esto, podemos asumir que los bigramas son independientes entre sí, cosa que sabemos que no es cierta, pero simplifica mucho el problema y no funciona nada mal. Es más, funciona mejor cuanto más largo sea un texto.
 
 Dado un texto, obtenemos todos los bigramas de este $$\{x_1y_1,\ldots,x_ny_n\}$$ y calculamos la verosimilitud de los bigramas en cada idioma para luego simplemente ver cuál es mayor, es decir:
 
