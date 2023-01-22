@@ -25,7 +25,7 @@ A pesar de la cantidad de humo y el mal olor que hace, sigues con tu paseo, que 
 
 ![Distribución de coches en circulación según la primera letra de la matrícula](/assets/img/distribucion_coches.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
-Entonces, tu creencia sobre la probabilidad de encontrarte con esa matrícula se vuelve a alterar, en particular, un $$\displaystyle\frac{p_E}{\sum_{x\in \{A,\ldots,M\}} p_x}\cdot\frac{1}{27^2}$$% de los automóviles (donde $p_x$ es la proporción de coches en circulación que tienen $$x$$ como la primera letra de la matrícula).
+Entonces, tu creencia sobre la probabilidad de encontrarte con esa matrícula se vuelve a alterar, en particular, un $$\displaystyle\frac{p_E}{\sum_{x\in \{A,\ldots,M\}} p_x}\cdot\frac{1}{27^2}$$% de los automóviles (donde $$p_x$$ es la proporción de coches en circulación que tienen $$x$$ como la primera letra de la matrícula).
 
 En fin, la idea está clara. Podríamos seguir con más razonamientos que puedan parecer lógicos, como por ejemplo considerar la proporción de matrículas con $$x$$ letra en la segunda posición, conociendo la primera, o incluso que te tomes el problema como algo personal y encuentres la información de todas las matrículas de España, la geolocalización de las viviendas donde residen los conductores y estimes la probabilidad de que el vehículo con esa matrícula acabe circulando por tu lado en función de la distancia de donde resida el dueño. Sin embargo, los paseos no suelen dar para tanto.
 
