@@ -17,7 +17,7 @@ Muchas son las noticias que sueltan resultados probabilísticos sobre ciertos ev
 
 Por poner un ejemplo, imaginemos que estamos dando un paseo por una ciudad (necesito un escenario con coches, con mucho humo, por ejemplo, Madrid) y nos cuestionamos, ¿cuál es la probabilidad de que el siguiente vehículo que pase por esta carretera de 8 carriles tenga las letras DSE?
 
-Así, a bote pronto, podemos razonar: dado que el alfabeto español tiene 27 letras, la probabilidad de encontrarnos con un vehículo así sería de 1 entre $$27^3$$. Y el razonamiento podría darse por válido.
+Así, a bote pronto, podemos razonar: dado que el alfabeto español tiene 27 letras, la probabilidad de encontrarnos con un vehículo así sería de 1 entre $27^3$. Y el razonamiento podría darse por válido.
 
 No obstante, al poco rato de pasear y leer algunas matrículas, observamos que la primera letra suele estar entre la A y la M. En ese mismo instante recuerdas que las matrículas se registran siguiendo el orden del alfabeto, variando las letras de derecha a izquierda. Es entonces cuando cambia tu perspectiva y actualizas tu creencia sobre el evento. En este caso, la probabilidad de encontrarte con esa matrícula sería de 1 entre \(13\cdot24^2\) posibilidades.
 
