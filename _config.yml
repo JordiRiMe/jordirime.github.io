@@ -251,7 +251,6 @@ date_format: "%Y-%m-%d"
 timezone: "Spain/Madrid"
 markdown: kramdown
 # markdown: maruku
-use_math: true
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
