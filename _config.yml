@@ -22,7 +22,7 @@ author: Jordi Ripoll
 navbar-links:
   About Me: "Científico de Datos en Wenalyze"
   Resources:
-    - Github: "https://github.com/JordiRiMe"
+    - Github: "JordiRiMe"
 #     - Learn markdown: "https://www.markdowntutorial.com/"
 #   Author's home: "https://deanattali.com"
 
@@ -52,8 +52,8 @@ social-network-links:
   email: "jordi_ripollm@hotmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #   facebook: deanattali
-  github: https://github.com/JordiRiMe
-  linkedin: https://www.linkedin.com/in/jordi-ripoll-melis-81959512b/
+  github: JordiRiMe
+  linkedin: jordi-ripoll-melis-81959512b/
 #   twitter: daattali
 #   patreon: DeanAttali
 #   youtube: c/daattali
