@@ -23,6 +23,8 @@ No obstante, al poco rato de pasear y leer algunas matrículas, observamos que l
 
 A pesar de la cantidad de humo y el mal olor que hace, sigues con tu paseo, que al menos está siendo entretenido. Sigues leyendo matrículas y te das cuenta de que la gran mayoría de ellas se distribuyen entre las letras D y H. Es entonces cuando piensas, quizás la hayan menos coches antiguos y nuevos en circulación. Y buscando entre fuentes encuentras la siguiente información (ficticia):
 
-![Distribución de coches en circulación según la primera letra de la matrícula](/assets/img/distribucion_coches.jpg){ style="display: block; margin: 0 auto" }
+{:refdef: style="text-align: center;"}
+![Distribución de coches en circulación según la primera letra de la matrícula](/assets/img/distribucion_coches.jpg)
+{: refdef}
 
 <!-- Cuando me enfrento a un nuevo problema, me gusta recordar las palabras de George Box, quien citó que "todos los modelos son erróneos, pero algunos son útiles".  -->
