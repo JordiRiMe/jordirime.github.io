@@ -25,6 +25,11 @@ A pesar de la cantidad de humo y el mal olor que hace, sigues con tu paseo, que 
 
 ![Distribución de coches en circulación según la primera letra de la matrícula](/assets/img/distribucion_coches.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
-Entonces, tu creencia sobre la probabilidad de encontrarte con esa matrícula se vuelve a alterar, en particular, 1 de cada $\displaystyle\frac{\sum_{l\in \{A,\ldots,M\}} p_l}{p_E}\cdot27^2$ automóviles (donde $p_x$ es la proporción de coches en circulación que tienen $x$ como la primera letra de la matrícula).
+Entonces, tu creencia sobre la probabilidad de encontrarte con esa matrícula se vuelve a alterar, en particular, un $\displaystyle\frac{p_E}{\sum_{x\in \{A,\ldots,M\}} p_x}\cdot\frac{1}{27^2}$% de los automóviles (donde $p_x$ es la proporción de coches en circulación que tienen $x$ como la primera letra de la matrícula).
 
-<!-- Cuando me enfrento a un nuevo problema, me gusta recordar las palabras de George Box, quien citó que "todos los modelos son erróneos, pero algunos son útiles".  -->
+En fin, la idea está clara. Podríamos seguir con más razonamientos que puedan parecer lógicos, como por ejemplo considerar la proporción de matrículas con $x$ letra en la segunda posición sabiendo cuál es la primera, o que te tomes el problema como algo personal y encuentres la información de todas las matrículas de España, la geolocalización de las viviendas donde residen los conductores y estimes la probabilidad de que el vehículo con esa matrícula acabe circulando por tu lado en función de la distancia de donde resida el dueño. Sin embargo, los paseos no suelen dar para tanto.
+
+Otras veces, cuando tienes que solucionar un problema serio, lo primero que se debería hacer es informarse sobre él. Y en este caso podemos encontrar que 
+> El sistema actual de numeración de las matrículas utiliza el formato NNNN LLL, donde LLL son tres letras secuenciales desde BBB hasta ZZZ que se incrementan cuando el número llega a 9999. Las letras utilizadas son las consonantes.
+
+Entonces no hay subjetividad ni nada que discutir, simplemente la matrícula DSE no existe.
