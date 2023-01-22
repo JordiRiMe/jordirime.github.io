@@ -19,10 +19,12 @@ Por poner un ejemplo, imaginemos que estamos dando un paseo por una ciudad (nece
 
 Así, a bote pronto, podemos razonar: dado que el alfabeto español tiene 27 letras, la probabilidad de encontrarnos con un vehículo así sería de 1 entre $27^3$. Y el razonamiento podría darse por válido.
 
-No obstante, al poco rato de pasear y leer algunas matrículas, observamos que la primera letra suele estar entre la A y la M. En ese mismo instante recuerdas que las matrículas se registran siguiendo el orden del alfabeto, variando las letras de derecha a izquierda. Es entonces cuando cambia tu perspectiva y actualizas tu creencia sobre el evento. En este caso, la probabilidad de encontrarte con esa matrícula sería de 1 entre $13\cdot24^2$ posibilidades.
+No obstante, al poco rato de pasear y leer algunas matrículas, observamos que la primera letra suele estar entre la A y la M. En ese mismo instante recuerdas que las matrículas se registran siguiendo el orden del alfabeto, variando las letras de derecha a izquierda. Es entonces cuando cambia tu perspectiva y actualizas tu creencia sobre el evento. En este caso, la probabilidad de encontrarte con esa matrícula sería de 1 entre $13\cdot27^2$ posibilidades.
 
-A pesar de la cantidad de humo y el mal olor que hace, sigues con tu paseo, que al menos está siendo entretenido. Sigues leyendo matrículas y te das cuenta de que la gran mayoría de ellas se distribuyen entre las letras D y H. Es entonces cuando piensas, quizás la hayan menos coches antiguos y nuevos en circulación. Y buscando entre fuentes encuentras la siguiente información (ficticia):
+A pesar de la cantidad de humo y el mal olor que hace, sigues con tu paseo, que al menos está siendo entretenido. Sigues leyendo matrículas y te das cuenta de que la gran mayoría de ellas se distribuyen entre las letras F y L. Es entonces cuando piensas que quizás hayan menos coches antiguos y nuevos en circulación. Y navegando por la red encuentras datos (ficticios) que muestran que la proporción de vehículos en circulación varía en función de la primera letra de la matrícula:
 
 ![Distribución de coches en circulación según la primera letra de la matrícula](/assets/img/distribucion_coches.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
+
+Entonces, tu creencia sobre la probabilidad de encontrarte con esa matrícula se vuelve a alterar, en particular, 1 de cada $\displaystyle\frac{\p_E}{\sum_{l\in\{A,\ldots,M}p_l}\cdot27^2$ coches (donde $p_x$ es la proporción de coches con la letra $x$ en circulación).
 
 <!-- Cuando me enfrento a un nuevo problema, me gusta recordar las palabras de George Box, quien citó que "todos los modelos son erróneos, pero algunos son útiles".  -->
