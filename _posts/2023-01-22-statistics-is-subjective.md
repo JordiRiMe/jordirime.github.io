@@ -3,7 +3,7 @@ author: Jordi Ripoll Melis
 date: 2023-01-22 08:13:31+00:00
 draft: false
 title: La subjetividad de la estadística
-layout post
+layout: post
 
 url: https://jordirime.github.io
 categories:
