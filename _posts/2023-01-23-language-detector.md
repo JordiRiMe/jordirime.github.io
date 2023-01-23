@@ -20,7 +20,7 @@ A raíz de un post que me mostró cómo desencriptar mensajes con letras permuta
 
 La idea consiste en trabajar con los bigramas, que no son más que los pares de letras de las palabras que componen un texto. Por ejemplo, la palabra 'patata' tendría los bigramas $$\{' p', 'pa', 'at', 'ta', 'at', 'ta', 'a '\}$$. Un detalle importante a considerar, y que se me pasó en un primer momento, es considerar el primer y último bigrama (en este caso ' p' y 'a '), ya que indican el inicio y el final de una palabra.
 
-Es posible explotar esta información construyendo una distribución que indique la probabilidad de encontrar cierto bigrama dado un idioma. Para construir dicha distribución de probabilidad, habría que tener en cuenta todas las letras de aquellos idiomas que se consideren, más el espacio ' '. En mi caso particular, necesito detectar si un texto está escrito en catalán, castellano, inglés, francés o alemán. Por lo tanto, tendré que considerar todas las letras del alfabeto español, incluyendo además la 'ç' (que aparece en el catalán y francés) y la 'ß' (en textos alemanes). Podría considerar tildes, diéresis, etc., pero para evitar posibles errores ortográficos en el texto y otras cosas imprevisibles que puedan surgir en los textos, me limitaré a texto sin caracteres especiales de ese estilo.
+Es posible explotar esta información construyendo una distribución que indique la probabilidad de encontrar cierto bigrama dado un idioma. Para construir dicha distribución de probabilidad, habría que tener en cuenta todas las letras de aquellos idiomas que se consideren, más el espacio ' '. En mi caso particular, necesito detectar si un texto está escrito en castellano, inglés, francés o alemán. Por lo tanto, tendré que considerar todas las letras del alfabeto español, incluyendo además la 'ç' (por los textos en francés) y la 'ß' (en textos alemanes). Podría considerar tildes, diéresis, etc., pero para evitar posibles errores ortográficos en el texto y otras cosas imprevisibles que puedan surgir en los textos, me limitaré a texto sin caracteres especiales de ese estilo.
 
 Una vez que tengo en cuenta esto, leo un texto (cuanto más largo mejor) de cada idioma y calculo la probabilidad $$p_{xy}$$ de encontrar un bigrama $$xy$$ en el documento (esto sería calcular $$n_{xy}/N$$ donde N es el número de bigramas totales del texto y $$n_{xy}$$ el número de bigramas $$xy$$ que encuentre). Para ser más precisos, realmente estimo $$\hat{p_{xy}}$$ como $$\displaystyle\frac{n_{xy}+1}{N + n_L^2}$$ por un pequeño detalle que veremos más adelante, donde $$n_L$$ es el número de letras diferentes que estoy considerando más 1 (por el espacio).
 
@@ -36,10 +36,70 @@ He aquí el motivo por el que antes hemos sumado 1 y ajustado el divisor en la e
 
 Es en este punto cuando intentas buscar cosas que se te puedan escapar, le das un par de vueltas y piensas, ¿qué pasaría si mi texto es una URL o un conjunto de carácteres aleatorios?. La respuesta es sencilla, detectaremos un idioma de los que estamos intentando buscar. 
 
-Enconces, ¿cómo detecto por ejemplo un texto random como puede ser la letra de una canción de Bad Bunny? Pues construyendo justamente eso, una distribución de probabilidad aleatoria $$p(xy\vert Random)=\displaystyle\frac{1}{n_L^2}$$.
+Enconces, ¿cómo podría detectar estos textos? Pues construyendo justamente eso, una distribución de probabilidad aleatoria $$p(xy\vert Random)=\displaystyle\frac{1}{n_L^2}$$.
 
 Con esto, lo tendríamos todo listo. Solo faltaría aplicar la regla del gran Bayes para calcular la probabilidad de que el texto sea de cierto idioma:
 
 $$p(Idioma_i|x_1y_1,\ldots,x_ny_n) = \displaystyle\frac{p(x_1y_1,\ldots,x_ny_n|Idioma_i)}{\sum_{i}p(x_1y_1,\ldots,x_ny_n|Idioma_i)}$$
 
 Veamos algunos ejemplos:
+
+Algunas pocas veces tengo palabras sueltas, que es lo que más puede sacarle los colores a este método:
+
+> 'Frase'
+
+| Idioma    | Probabilidad |
+|-----------|--------------|
+| Español   | 64.6%        |
+| Inglés    | 8.9%         |
+| Alemán    | 6.9%         |
+| Francés   | 19.6%        |
+| Aleatorio | 0%           |
+
+Veamos como, con frases más largas, el algoritmo lo tiene más claro:
+
+> 'Frase de ejemplo un poco más larga'
+
+| Idioma    | Probabilidad |
+|-----------|--------------|
+| Español   | 99.9%        |
+| Inglés    | 0%           |
+| Alemán    | 0%           |
+| Francés   | 0.1%         |
+| Aleatorio | 0%           |
+
+Pero, como todo en la vida, nada es perfecto:
+
+> 'A box inside a box'
+
+| Idioma    | Probabilidad |
+|-----------|--------------|
+| Español   | 0%           |
+| Inglés    | 0.1%         |
+| Alemán    | 0%           |
+| Francés   | 99.6%        |
+| Aleatorio | 0%           |
+
+Aunque tengo que reconocer que me ha costado encontrar un ejemplo que no funcione.
+
+Y, ¿cómo funciona con textos diferentes a estos idiomas?. Por ejemplo, una página web:
+
+> 'skfq wkfnq'
+
+| Idioma    | Probabilidad |
+|-----------|--------------|
+| Español   | 0%           |
+| Inglés    | 0%           |
+| Alemán    | 0%           |
+| Francés   | 0%           |
+| Aleatorio | 100%         |
+
+Cela fonctionne assez bien et rapidement:
+
+| Idioma    | Probabilidad |
+|-----------|--------------|
+| Español   | 0%           |
+| Inglés    | 0%           |
+| Alemán    | 0%           |
+| Francés   | 100%         |
+| Aleatorio | 0%           |
