@@ -31,4 +31,4 @@ Cada una de estas distancias tiene sus ventajas y sus inconvenientes. La distanc
 
 Bien, ya tenemos medidas de similaridad para diferentes situaciones. Por ejemplo, para comparar nombres de empresa, sería más adecuado utilizar la medida de similaridad de Levenshtein, ya que el orden de las palabras en un nombre es relevante. Por otro lado, si por ejemplo se desea comparar direcciones postales, el coeficiente de Sorensen-Dice puede ayudarnos a medir mejor situaciones como 'Polígono Industrial de Son Castelló' y 'Son Castelló (Polígono Industrial).
 
-Y realmente esto solo acaba de empezar, pero el tema de estandarización lo dejaremos para otra entrada.
+Y realmente esto solo acaba de empezar, pero el tema de estandarización, que es lo que seguiría, es demasiado aburrido para leer.
