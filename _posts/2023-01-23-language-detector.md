@@ -1,6 +1,6 @@
 ---
 author: Jordi Ripoll Melis
-date: 2023-01-22 08:13:31+00:00
+date: 2023-01-23 08:13:31+00:00
 draft: false
 title: Cómo detectar el idioma de un texto
 layout: post
