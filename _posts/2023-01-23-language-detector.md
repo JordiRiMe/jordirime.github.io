@@ -7,7 +7,7 @@ layout: post
 
 url: https://jordirime.github.io
 categories:
-- estadística
+- ciencia de datos
 tags:
 - ciencia de datos
 - nlp
