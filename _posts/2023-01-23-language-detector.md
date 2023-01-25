@@ -82,7 +82,7 @@ Pero, como todo en la vida, nada es perfecto:
 
 Aunque tengo que reconocer que me ha costado encontrar un ejemplo que no funcione.
 
-Y, ¿cómo funciona con textos diferentes a estos idiomas?. Por ejemplo, una página web:
+Y, ¿cómo funciona con textos diferentes a estos idiomas?. Por ejemplo, un texto aleatorio: 
 
 > 'skfq wkfnq'
 
@@ -101,5 +101,5 @@ Cela fonctionne assez bien et rapidement:
 | Español   | 0%           |
 | Inglés    | 0%           |
 | Alemán    | 0%           |
-| Francés   | 99.9%         |
+| Francés   | 99.9%        |
 | Aleatorio | 0%           |
