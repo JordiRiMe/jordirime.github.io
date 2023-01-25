@@ -92,7 +92,7 @@ Y, ¿cómo funciona con textos diferentes a estos idiomas?. Por ejemplo, una pá
 | Inglés    | 0%           |
 | Alemán    | 0%           |
 | Francés   | 0%           |
-| Aleatorio | 100%         |
+| Aleatorio | 99.9%         |
 
 Cela fonctionne assez bien et rapidement:
 
@@ -101,5 +101,5 @@ Cela fonctionne assez bien et rapidement:
 | Español   | 0%           |
 | Inglés    | 0%           |
 | Alemán    | 0%           |
-| Francés   | 100%         |
+| Francés   | 99.9%         |
 | Aleatorio | 0%           |
