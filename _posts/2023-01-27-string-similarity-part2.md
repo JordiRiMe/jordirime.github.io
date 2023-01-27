@@ -41,8 +41,8 @@ Intentar entender mejor cómo funcionan estos coeficientes y empiezas a probar c
 
 ![Coeficiente de Sorensen-Dice en función de la longitud de las palabras](/assets/img/sorensen_dice_estimator.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-Es decir, cuanto mayor sea la longitud de las cadenas que se comparen, siendo ambas aleatorias (diferentes), la distancia según este coeficiente (y en el resto de indicadores en general) decrece de manera significativa.
+Es decir, cuanto mayor sea la longitud de las cadenas que se comparen, siendo ambas aleatorias (diferentes), la distancia según este coeficiente decrece de manera significativa. Este efecto ocurre en este tipo de indicadores en general.
 
-Esto es un problema si queremos definir un límite a partir del cual determinamos que dos secuencias de palabras son diferentes y por lo tanto hay que trabajar en este punto un poco más.
+Esto es un problema si queremos establecer un límite a partir del cual determinar si dos secuencias de palabras son diferentes. Hay que ajustarlo para poder hacer esto de manera consistente.
 
 Como nota adicional, si se estandariza el coeficiente mediante una estimación basada en simulaciones, no hay que tener en cuenta solo el idioma (relevante en la distribución de los bigramas que nos encontremos), ¡sino que también habrá que considerar el contexto! ¿Qué quieres comparar? ¿Direcciones? ¿Conversaciones? ¡La distribución de los bigramas será diferente también!
