@@ -37,7 +37,7 @@ y obtenemos una distancia de 0.66.
 
 A primera vista no parece haber nada extraño. No obstante, cuando empiezas a utilizar estos indicadores e intentas entender su significado, te preguntas: ¿un 0.66 de semejanza entre dos direcciones que no se parecen en nada y un 0.1 entre dos direcciones prácticamente iguales?. 
 
-Intentar entender mejor cómo funcionan estos coeficientes y empiezas a probar con diferentes casos. Es entonces cuando decides realizar algunas simulaciones con cadenas aleatorias de diferente longitud y observas el siguiente comportamiento:
+Intentas entender mejor cómo funcionan estos coeficientes y empiezas a probar con diferentes casos. Es entonces cuando decides realizar algunas simulaciones con cadenas aleatorias de diferente longitud y observas el siguiente comportamiento:
 
 ![Coeficiente de Sorensen-Dice en función de la longitud de las palabras](/assets/img/sorensen_dice_estimator.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
