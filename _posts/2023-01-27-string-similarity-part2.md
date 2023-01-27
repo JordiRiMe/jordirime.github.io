@@ -15,9 +15,7 @@ tags:
 - distancias
 ---
 
-En la anterior [publicación](https://jordirime.github.io/2023-01-25-string-similarity-part1/) hemos visto cómo podemos hacer uso de las medidas de similiaridad para ver la semejanza entre cadenas. Con esto, podemos tomar una decisión a la hora de considerar si dos cadenas son parecidas o no. Por ejemplo, se puede construir un simple modelo logístico cuya variable regresora sea la distancia ($$d$$) y determinar el límite maximizando el área bajo la curva ROC o el indicador que mejor se ajuste al caso particular de cada uno:
-
-$$logit(p_i) = \beta_0 + \beta_1d$$
+En la anterior [publicación](https://jordirime.github.io/2023-01-25-string-similarity-part1/) hemos visto cómo podemos hacer uso de las medidas de similiaridad para ver la semejanza entre cadenas. Con esto, podemos tomar una decisión a la hora de considerar si dos cadenas son parecidas o no.
 
 Hasta aquí todo parece normal y es un punto en el que podrías dar por válido todo lo que has hecho sin pararte a analizar más a fondo. Es entonces cuando pones en producción el modelo y te encuentras con algunos casos particulares. Veamos en particular cómo funciona el coeficiente de Sorensen-Dice:
 
