@@ -19,7 +19,7 @@ En la anterior [publicación](https://jordirime.github.io/2023-01-25-string-simi
 
 $$logit(p) = \beta_0 + \beta_1d$$
 
-Hasta aquí todo parece normal y es un punto en el que podrías dar por válido todo lo que has hecho sin pararte a analizar más a fondo. Es entonces cuando pones en producción el modelo y te encuentras con algunos casos particulares. Veamos en particular cómo funciona el coeficiente de Sorensen-Dice:
+Hasta aquí todo parece normal y es un punto en el que podrías dar por hecho que todo está bien sin analizar más a fondo el asunto. Es entonces cuando pones en producción el modelo y te encuentras con algunos casos particulares. Veamos funciona el coeficiente de Sorensen-Dice en un par:
 
 1. Comparamos las direcciones:
 
